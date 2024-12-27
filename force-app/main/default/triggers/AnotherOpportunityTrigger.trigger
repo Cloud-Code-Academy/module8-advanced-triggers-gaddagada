@@ -31,7 +31,7 @@ trigger AnotherOpportunityTrigger on Opportunity (before insert, after insert, b
             for (Opportunity oldOpp : Trigger.old){
                 if (oldOpp.IsClosed){
                     oldOpp.addError('Cannot delete closed opportunity');
-                }
+                } 
             }
         }
     }
