@@ -36,7 +36,7 @@ public with sharing class AccountHelper {
         }
     }
 
-    static void addressCopy(List<Account> accounts){
+    public static void addressCopy(List<Account> accounts){
         for(Account acc : accounts){
             if(acc.ShippingStreet != null){
                 acc.BillingStreet = acc.ShippingStreet;
